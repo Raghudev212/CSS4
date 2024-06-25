@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            display: block;
+            text-align: -webkit-center;
+            unicode-bidi: isolate;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: rgb(6, 114, 114);
+        }
+        .header{
+            text-align: center;
+            color: azure;
+            padding: 5px;
+            background-color: rgb(79, 15, 79);
+        }
+
+        button{
+            background-color: maroon;
+            color: chartreuse;
+            cursor: pointer;
+            border-radius: 20px;
+            padding: 20px;
+            transition-property: background-color;
+            transition-delay: 0.29s;
+        }
+
+        button:hover{
+            background-color: rgb(35, 12, 137);
+        }
+
+        img{
+            margin-top: 8%;
+            margin-bottom: 8px;
+            position: relative;
+            transition: all 3s;
+        }
+
+        #Rotate:hover~.main img{
+            transform: rotate(300deg);
+        }
+
+        #Skew:hover~.main img{
+            transform: skewY(20deg);
+        }
+
+        #Scale:hover~.main img{
+            transform: scale(2);
+        }
+
+        #Translate:hover~.main img{
+            transform: translate(50px, 80px);
+        }
+        
+    </style>
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="header"><h1>Transforms</h1></div>
+        <div class="content">
+            <button id="Rotate">Rotate</button>
+            <button id="Skew">Skew</button>
+            <button id="Scale">Scale</button>
+            <button id="Translate">Translate</button>
+            <div class="main"><img src="../../Multimedia/Images/maxresdefault.jpg" width="300px" height="300pxs"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
